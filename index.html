@@ -8,8 +8,7 @@
     <title>Sistema Local de Controle de Execução Indireta de Serviço</title>
     <link rel="stylesheet" href="assets/css/index-main.css">
     <link rel="stylesheet" href="assets/css/index-util.css">
-
-    
+    <script src="assets/js/script.js"></script>
 </head>
 
 <body>
@@ -20,35 +19,50 @@
         <div class="container-login100">
             <div class="wrap-login100">
                 <div class="login100-form-title" style="background-image: url(assets/img/bg-01.jpg);">
-                    <img src="assets/img/correios.svg" alt="Logo dos Correios" height="36px" >
+
                     <span class="login100-form-title-1">SICEIS - LOGIN - </span>
                 </div>
-                <form class="login100-form validate-form" action="home.html">
-                    <div class="wrap-input100 validate-input m-b-26" data-validade="Informar a matrícula do usuário">
-                        <span class="label-input100">Matrícula</span>
-                        <input class="input100" type="text" name="matricula" placeholder="Matrícula do usuário">
+                <form class="login100-form validate-form flex-sb flex-w" action="home.html">
+                    <div class="p-t-31 p-b-9">
+                        <span class="txt1">
+                            Matrícula
+                        </span>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Username is required">
+                        <input class="input100" type="text" maxlength="11" name="matricula" required
+                            onkeypress="formatar('#.###.###-#', this)">
                         <span class="focus-input100"></span>
                     </div>
-                    <div class="wrap-input100 validate-input m-b-18" data-validate="Senha Obrigatória">
-                        <span class="label-input100">Senha</span>
-                        <input class="input100" type="password" name="pass" placeholder="Senha do usuário">
+                    <div class="p-t-13 p-b-9">
+                        <span class="txt1">
+                            Senha
+                        </span>
+
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Password is required">
+                        <input class="input100" type="password" name="password" required maxlength="10">
                         <span class="focus-input100"></span>
                     </div>
-                    <div class="flex-sb-m w-full p-b-30">
-                        <div class="contact100-form-checkbox">
-                            <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-                            <label class="label-checkbox100" for="ckb1">Lembrar</label>
-                        </div>
-                        <div>
-                            <a href="#" class="txt1"> Forgot Password? </a>
-                        </div>
-                    </div>
-                    <div class="container-login100-form-btn">
-                        <button class="login100-form-btn">Login</button>
+                    <div class="container-login100-form-btn m-t-17">
+                        <button class="login100-form-btn">
+                            Acessar
+                        </button>
                     </div>
                 </form>
+
+                <div class="footer-name">
+                    <span class="logo-txt">
+                        - SICEIS - Sistema Local de Controle de Execução Indireta de Serviço
+                    </span>
+                </div>
+
+                <div class="footer-logo">
+                    <img src="assets/img/correios.svg" alt="Logo dos Correios">
+                </div>
+
             </div>
         </div>
+
     </div>
 </body>
 
